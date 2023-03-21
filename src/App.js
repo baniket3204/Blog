@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from './Create';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
+import HowTo from './HowTo';
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path = "/blogs/:id">
           <BlogDetails></BlogDetails>
+        </Route>
+        <Route exact path = "/howto">
+          <HowTo></HowTo>
         </Route>
         <Route path = "*">
           <NotFound></NotFound>
